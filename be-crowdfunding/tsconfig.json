@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "ES2018",         // Versi ECMAScript yang digunakan
+    "module": "commonjs",       // Jenis modul
+    "outDir": "./dist",         // Direktori output untuk file JS
+    "rootDir": "./src",         // Direktori sumber untuk file TS
+    "strict": true,             // Aktifkan pemeriksaan ketat
+    "esModuleInterop": true,    // Izinkan impor modul ES6
+    "skipLibCheck": true,       // Lewati pengecekan tipe pada file definisi
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["./src/types/", "./node_modules/@types"],
+    "types": ["node", "express"]
+  },
+  "include": [
+    "src/**/*.ts"               // Sertakan semua file TS di src
+, "hardhat.config.ts"  ],
+  "exclude": [
+    "node_modules",             // Kecualikan node_modules
+    "dist"                      // Kecualikan dist
+  ]
+}
